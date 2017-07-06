@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/paleBlue">
+
+    <RelativeLayout
+        android:id="@+id/relLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tapOnIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to Shake on It!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:textColor="#4e7ac7"/>
+
+<ImageButton
+    android:id="@+id/btn_shaker"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:background="@drawable/circle_button"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:scaleType="center"
+    android:clickable="true"
+    android:layout_below="@id/tapOnIt"
+    android:layout_marginTop="100dp"
+    />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/Shook"/>I
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout4"
+        android:layout_below="@id/relLayout3">
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/editText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="Add"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnView"
+            android:text="View Data"
+            android:layout_toRightOf="@+id/btnAdd"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
